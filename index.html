@@ -48,14 +48,14 @@
 		<div class="hero-bg-wrap">
 			<div class="wrap flex-container">
 				<h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
-				<button type="button" class="hero__button">Заказать услугу</button>
+				<button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
 			</div>
 		</div>
 	</section>
 	<main>
 		<section class="principles">
 			<div class="wrap">
-				<h2 class="primary-header visually-hidden">Наши принципы</h2><!--скрытый заголовок-->
+				<h2 class="primary-header visually-hidden">Наши принципы</h2>
 				<ul class="principles-list list flex-container">
 					<li class="principles-list__item">
 						<div class="principles-icon__container">
@@ -102,12 +102,21 @@
 				<ul class="img-list list flex-container">
 					<li class="img-list__item"> 
 						<img src="./images/index/img1.jpg" class="img-list__img" alt="coding">
+						<div class="img-list__wrapper">
+							<p class="img-list__text">Десктопные приложения</p>
+						</div>
 					</li>
 					<li class="img-list__item">
 						<img src="./images/index/img2.jpg" class="img-list__img" alt="mobile development">
+						<div class="img-list__wrapper">
+							<p class="img-list__text">Мобильные приложения</p>
+						</div>
 					</li>
 					<li class="img-list__item">
 						<img src="./images/index/img3.jpg" class="img-list__img" alt="tablet development">
+						<div class="img-list__wrapper">
+							<p class="img-list__text">Дизайнерские решения</p>
+						</div>
 					</li>
 				</ul>
 			</div>	
@@ -370,5 +379,17 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="backdrop" data-modal>
+		<div class="modal">
+			<button type="button" class="modal-close-btn" data-modal-close>
+				<svg class="" width="11" height="11">
+					<use href="images/sprite.svg#icon-Vector"></use>
+				</svg>
+			</button>
+		</div>
+	</div>		
+
+	<script src="./js/modal.js"></script>
 </body>
 </html>

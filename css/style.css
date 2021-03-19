@@ -145,15 +145,8 @@ address{
 .navigation-list__link:hover::after,
 .navigation-list__link:focus::after,
 .current::after{
-	content: '';
 	visibility: visible;
-	position: absolute;
 	width: 100%;
-	height: 4px;
-	border-radius: 2px;
-	left: 0;
-	bottom: -32px;
-	background-color: var(--accent-color);
 }
 
 .current{

@@ -133,7 +133,8 @@ address{
 	content: '';
 	visibility: hidden;
 	position: absolute;
-	width: 0%;
+	width: 100%;
+	transform: scaleX(0);
 	height: 4px;
 	border-radius: 2px;
 	left: 0;
@@ -146,7 +147,7 @@ address{
 .navigation-list__link:focus::after,
 .current::after{
 	visibility: visible;
-	width: 100%;
+	transform: scaleX(1);
 }
 
 .current{
